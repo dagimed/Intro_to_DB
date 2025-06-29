@@ -1,4 +1,4 @@
--- Script to print full description of books table without using DESCRIBE or EXPLAIN
+-- Script to print full description of books table
 -- This script will be executed with database name as argument
 SELECT 
     COLUMN_NAME,
@@ -9,4 +9,4 @@ SELECT
     EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS 
 WHERE TABLE_SCHEMA = DATABASE() 
-AND TABLE_NAME = 'Books';
+AND TABLE_NAME = 'books';
